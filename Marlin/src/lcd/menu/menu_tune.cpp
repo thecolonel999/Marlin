@@ -34,12 +34,12 @@
 #include "../../module/temperature.h"
 #include "../../MarlinCore.h"
 
-#if HAS_LEVELING
-  #include "../../feature/bedlevel/bedlevel.h"
+#if ENABLED(SINGLENOZZLE_STANDBY_TEMP)
+  #include "../../module/tool_change.h"
 #endif
 
-#if ENABLED(SINGLENOZZLE)
-  #include "../../module/tool_change.h"
+#if HAS_LEVELING
+  #include "../../feature/bedlevel/bedlevel.h"
 #endif
 
 #if ENABLED(BABYSTEPPING)
