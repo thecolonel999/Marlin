@@ -984,7 +984,7 @@
  * vibration and surface artifacts. The algorithm adapts to provide the best possible step smoothing at the
  * lowest stepping frequencies.
  */
-#define ADAPTIVE_STEP_SMOOTHING
+//#define ADAPTIVE_STEP_SMOOTHING
 
 /**
  * Custom Microstepping
@@ -1964,7 +1964,7 @@
 
 // The ASCII buffer for serial input
 #define MAX_CMD_SIZE 96
-#define BUFSIZE 36
+#define BUFSIZE 44
 
 // Transmission to Host Buffer Size
 // To save 386 bytes of PROGMEM (and TX_BUFFER_SIZE+3 bytes of RAM) set to 0.
@@ -3319,7 +3319,7 @@
  *
  * Execute certain G-code commands immediately after power-on.
  */
-#define STARTUP_COMMANDS "\nM280P0S60\nG4P500\nM280P0S90\nG4P200"
+//#define STARTUP_COMMANDS "\nM280 P0 S60\nG4 P200\nM280 P0 S90\nG4 P200\nM17 Z\n"
 
 /**
  * G-code Macros
